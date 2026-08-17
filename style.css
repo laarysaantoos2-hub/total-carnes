@@ -285,7 +285,7 @@ header {
             rgba(9, 9, 9, 0.65) 45%,
             rgba(9, 9, 9, 0.15) 100%
         ),
-        url("imagens/contra.png");
+        url("contra.png");
 
     background-size: cover;
     background-position: center;

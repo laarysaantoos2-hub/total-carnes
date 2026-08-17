@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo | Total Carnes</title>
+
+    <!-- Mesmo CSS do site -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img src="imagens/logo site.jpeg" alt="Total Carnes">
+
+        <div class="logo-texto">
+            <span>Total Carnes</span>
+            <small>A qualidade que você confia</small>
+        </div>
+
+    </div>
+
+
+    <button class="menu-mobile" id="menuMobile" aria-label="Abrir menu">
+        ☰
+    </button>
+
+
+    <nav id="menuNav">
+
+        <a href="index.html">🏠 INÍCIO</a>
+
+        <a href="catalogo.html">🥩 CATÁLOGO</a>
+
+        <a href="sobre.html">❤️ SOBRE NÓS</a>
+
+        <a href="contato.html">📍 CONTATO</a>
+
+    </nav>
+
+
+    <button class="pedido" onclick="abrirCarrinho()">
+        🛒 PEDIDO
+    </button>
+
+</header>
+
+<main>
+
+<section class="catalogo" id="catalogo">
+
+    <div class="titulo">
+
+        <small>CATÁLOGO ONLINE</small>
+
+        <h1>
+            Escolha seus produtos
+        </h1>
+
+    </div>
+
+
+    <!-- ================================
+         CARNES
+    ================================= -->
+
+    <div class="categoria-produtos">
+
+        <small>CARNES</small>
+
+        <h2>
+            🥩 Nossas carnes
+        </h2>
+
+    </div>
+
+
+    <div class="produtos">
+
+
+        <!-- FRALDINHA -->
+
+        <div class="produto">
+
+            <div class="imagem">
+
+                <img
+                    src="imagens/Fraldinha Recheada.jpeg"
+                    alt="Fraldinha Recheada"
+                >
+
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Fraldinha Recheada
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarAoCarrinho('Fraldinha Recheada', 0, 'kg')"
+                >
+                    ADICIONAR À ENCOMENDA
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTRA FILÉ -->
+
+        <div class="produto">
+
+            <div class="imagem">
+
+                <img
+                    src="imagens/contra file.jpeg"
+                    alt="Contra Filé"
+                >
+
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Contra Filé
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarAoCarrinho('Contra Filé', 0, 'kg')"
+                >
+                    ADICIONAR À ENCOMENDA
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CHULETA COSTELA GAÚCHA -->
+
+<div class="produto">
+
+    <div class="imagem">
+
+        <img
+            src="imagens/chuleta.jpg"
+            alt="Chuleta Costela Gaúcha"
+        >
+
+    </div>
+
+    <div class="produto-info">
+
+        <h3>
+            Chuleta Costela Gaúcha
+        </h3>
+
+        <span class="unidade">
+            Consulte para encomenda
+        </span>
+
+        <button
+            class="adicionar"
+            onclick="adicionarAoCarrinho('Chuleta Costela Gaúcha', 0, 'kg')"
+        >
+            ADICIONAR À ENCOMENDA
+        </button>
+
+    </div>
+
+</div>
+
+        <!-- CORAÇÃO -->
+
+        <div class="produto">
+
+            <div class="imagem">
+
+                <img
+                    src="imagens/coracao.jpeg"
+                    alt="Coração Temperado"
+                >
+
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Coração Temperado
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarAoCarrinho('Coração Temperado', 0, 'un')"
+                >
+                    ADICIONAR À ENCOMENDA
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         ACOMPANHAMENTOS
+    ================================= -->
+
+    <div class="categoria-produtos">
+
+        <small>ACOMPANHAMENTOS</small>
+
+        <h2>
+            🥖 Para acompanhar seu churrasco
+        </h2>
+
+    </div>
+
+
+    <div class="produtos">
+
+
+        <!-- PÃO DE ALHO -->
+
+        <div class="produto">
+
+            <div class="imagem">
+
+                <img
+                    src="imagens/paodealho.jpeg"
+                    alt="Pão de Alho"
+                >
+
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Pão de Alho
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarAoCarrinho('Pão de Alho', 0, 'un')"
+                >
+                    ADICIONAR À ENCOMENDA
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUEIJO COALHO -->
+
+        <div class="produto">
+
+            <div class="imagem">
+
+                <img
+                    src="imagens/queijo.jpeg"
+                    alt="Queijo Coalho"
+                >
+
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Queijo Coalho
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarAoCarrinho('Queijo Coalho', 0, 'un')"
+                >
+                    ADICIONAR À ENCOMENDA
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SAL GROSSO -->
+
+        <div class="produto">
+
+            <div class="imagem">
+                <img src="imagens/salgrosso.jpeg" alt="Sal Grosso">
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Sal Grosso
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarAoCarrinho('Sal Grosso', 0, 'un')"
+                >
+                    ADICIONAR À ENCOMENDA
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SAL DE PARRILLA -->
+
+        <div class="produto">
+
+            <div class="imagem">
+                <img src="imagens/saldeParrilla.jpg" alt="Sal de Parrilla">
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Sal de Parrilla
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <label class="label-sabor">
+                    Escolha o sabor:
+                </label>
+
+                <select
+                    class="select-sabor"
+                    id="sabor-sal-catalogo"
+                >
+
+                    <option value="Tradicional">
+                        Tradicional
+                    </option>
+
+                    <option value="Ervas Finas">
+                        Ervas Finas
+                    </option>
+
+                    <option value="Chimichurri">
+                        Chimichurri
+                    </option>
+
+                    <option value="Com Alho">
+                        Com Alho
+                    </option>
+
+                    <option value="Defumado com Pimenta">
+                        Defumado com Pimenta
+                    </option>
+
+                    <option value="Pimenta-do-Reino">
+                        Pimenta-do-Reino
+                    </option>
+
+                </select>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarComSabor('Sal de Parrilla', 0, 'un', 'sabor-sal-catalogo')"
+                >
+                    ADICIONAR 
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAROFA -->
+
+        <div class="produto">
+
+            <div class="imagem">
+                <img src="imagens/farofa.jpeg" alt="Farofa">
+            </div>
+
+            <div class="produto-info">
+
+                <h3>
+                    Farofa
+                </h3>
+
+                <span class="unidade">
+                    Consulte para encomenda
+                </span>
+
+                <label class="label-sabor">
+                    Escolha o sabor:
+                </label>
+
+                <select
+                    class="select-sabor"
+                    id="sabor-farofa-catalogo"
+                >
+
+                    <option value="Pequi">
+                        Pequi
+                    </option>
+
+                    <option value="Carne Seca">
+                        Carne Seca
+                    </option>
+
+                    <option value="Bacon">
+                        Bacon
+                    </option>
+
+                    <option value="Costelinha com Limão">
+                        Costelinha com Limão
+                    </option>
+
+                    <option value="Torresmo">
+                        Torresmo
+                    </option>
+
+                    <option value="Picanha">
+                        Picanha
+                    </option>
+
+                    <option value="Costela">
+                        Costela
+                    </option>
+
+                    <option value="Churrasco">
+                        Churrasco
+                    </option>
+
+                </select>
+
+                <button
+                    class="adicionar"
+                    onclick="adicionarComSabor('Farofa', 0, 'un', 'sabor-farofa-catalogo')"
+                >
+                    ADICIONAR À ENCOMENDA
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================================
+     CARRINHO
+================================ -->
+
+<div id="carrinho" class="carrinho">
+
+    <div class="carrinho-topo">
+
+        <strong>
+            🛒 Sua Encomenda
+        </strong>
+
+        <button onclick="fecharCarrinho()">
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        id="itens-carrinho"
+        class="itens-carrinho"
+    >
+        <p>
+            Seu carrinho está vazio.
+        </p>
+    </div>
+
+    <button
+        class="continuar"
+        onclick="fecharCarrinho()"
+    >
+        CONTINUAR COMPRANDO
+    </button>
+
+
+    <button
+        class="finalizar"
+        onclick="finalizarWhatsApp()"
+    >
+        ENVIAR ENCOMENDA PELO WHATSAPP
+    </button>
+
+
+    <div
+        id="dados-pedido"
+        class="dados-pedido"
+    >
+
+        <div class="checkout-titulo">
+            👤 <strong>Seus dados</strong>
+        </div>
+
+
+        <input
+            type="text"
+            id="nome-cliente"
+            placeholder="Seu nome"
+        >
+
+
+        <input
+            type="tel"
+            id="telefone-cliente"
+            placeholder="Seu telefone"
+        >
+
+
+        <div class="checkout-titulo">
+            📦 <strong>Como deseja receber?</strong>
+        </div>
+
+
+        <div class="opcoes-entrega">
+
+            <button
+                type="button"
+                class="opcao-entrega"
+                id="btn-uber"
+                onclick="selecionarEntrega('Entrega por Uber')"
+            >
+
+                <span class="opcao-icone">
+                    🛵
+                </span>
+
+                <span>
+                    <strong>Entrega por Uber</strong>
+                    <small>Taxa por conta do cliente</small>
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="opcao-entrega"
+                id="btn-retirada"
+                onclick="selecionarEntrega('Retirada na loja')"
+            >
+
+                <span class="opcao-icone">
+                    🏪
+                </span>
+
+                <span>
+                    <strong>Retirada na loja</strong>
+                    <small>Sem taxa de entrega</small>
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <select
+            id="tipo-entrega"
+            style="display:none;"
+        >
+
+            <option value="">
+                Escolha
+            </option>
+
+            <option value="Entrega por Uber">
+                Entrega por Uber
+            </option>
+
+            <option value="Retirada na loja">
+                Retirada na loja
+            </option>
+
+        </select>
+
+
+        <div
+            id="campo-endereco"
+            class="campo-endereco"
+        >
+
+            <div class="checkout-titulo endereco-titulo">
+                📍 <strong>Endereço para entrega</strong>
+            </div>
+
+            <input
+                type="text"
+                id="endereco-cliente"
+                placeholder="Digite seu endereço completo"
+            >
+
+            <small>
+                🛵 A taxa do Uber é por conta do cliente.
+            </small>
+
+        </div>
+
+
+        <div class="checkout-titulo">
+            💳 <strong>Forma de pagamento</strong>
+        </div>
+
+
+        <div class="pix-opcao">
+
+            <span class="pix-icone">
+                💠
+            </span>
+
+            <span>
+                <strong>PIX</strong>
+                <small>Pagamento via Pix</small>
+            </span>
+
+            <span class="pix-selecionado">
+                ●
+            </span>
+
+        </div>
+
+
+        <select
+            id="pagamento"
+            style="display:none;"
+        >
+
+            <option value="Pix">
+                Pix
+            </option>
+
+        </select>
+
+
+        <div class="checkout-titulo observacao-titulo">
+
+            📝 <strong>Observações</strong>
+
+            <span>
+                (opcional)
+            </span>
+
+        </div>
+
+
+        <textarea
+            id="observacoes"
+            maxlength="150"
+            placeholder="Alguma observação sobre o pedido?"
+        ></textarea>
+
+    </div>
+
+</div>
+
+
+<!-- ================================
+     WHATSAPP
+================================ -->
+
+<a
+    href="https://wa.me/5511953000827"
+    class="whatsapp-flutuante"
+    target="_blank"
+    aria-label="Fazer pedido pelo WhatsApp"
+>
+    <span>💬</span>
+
+    <strong>
+        Faça seu pedido
+    </strong>
+
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

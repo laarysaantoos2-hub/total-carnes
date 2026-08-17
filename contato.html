@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Total Carnes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img
+            src="imagens/logo site.jpeg"
+            alt="Total Carnes"
+        >
+
+        <div class="logo-texto">
+            <span>Total Carnes</span>
+            <small>A qualidade que você confia</small>
+        </div>
+
+    </div>
+
+
+    <!-- MENU MOBILE -->
+
+    <button
+        class="menu-mobile"
+        id="menuMobile"
+        aria-label="Abrir menu"
+    >
+        ☰
+    </button>
+
+
+    <!-- MENU -->
+
+    <nav id="menuNav">
+
+        <a href="index.html">
+            🏠 INÍCIO
+        </a>
+
+        <a href="catalogo.html">
+            🥩 CATÁLOGO
+        </a>
+
+        <a href="sobre.html">
+            ❤️ SOBRE NÓS
+        </a>
+
+        <a href="contato.html">
+            📍 CONTATO
+        </a>
+
+    </nav>
+
+
+    <!-- BOTÃO PEDIDO -->
+
+    <button
+        class="pedido"
+        onclick="abrirCarrinho()"
+    >
+        🛒 PEDIDO
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- =====================================
+         CONTATO
+    ====================================== -->
+
+    <section class="contato">
+
+        <div class="contato-cabecalho">
+
+            <small>
+                FALE COM A TOTAL CARNES
+            </small>
+
+            <h1>
+                Entre em <span>contato.</span>
+            </h1>
+
+            <p>
+                Estamos prontos para atender você.
+                Faça seu pedido, tire suas dúvidas ou venha
+                nos visitar!
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             CARDS DE CONTATO
+        ====================================== -->
+
+        <div class="contato-grid">
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                href="https://wa.me/5511953000827"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contato-card whatsapp-card"
+            >
+
+                <div class="contato-icone">
+                    💬
+                </div>
+
+                <div>
+
+                    <h3>
+                        WhatsApp
+                    </h3>
+
+                    <p>
+                        Faça seu pedido ou fale conosco.
+                    </p>
+
+                    <strong>
+                        (11) 95300-0827
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+            <!-- ENDEREÇO -->
+
+            <div class="contato-card">
+
+                <div class="contato-icone">
+                    📍
+                </div>
+
+                <div>
+
+                    <h3>
+                        Nossa loja
+                    </h3>
+
+                    <p>
+                        Rua Professora Lucinda Bastos, 950
+                        <br>
+                        Jundiapeba — Mogi das Cruzes/SP
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HORÁRIO -->
+
+            <div class="contato-card">
+
+                <div class="contato-icone">
+                    🕐
+                </div>
+
+                <div>
+
+                    <h3>
+                        Horário
+                    </h3>
+
+                    <p>
+                        Segunda a sábado
+                        <br>
+                        <strong>
+                            08h às 19h
+                        </strong>
+                    </p>
+
+                    <p>
+                        Domingos e feriados
+                        <br>
+                        <strong>
+                            08h às 13h
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             MAPA
+        ====================================== -->
+
+        <div class="contato-mapa">
+
+
+            <!-- TEXTO -->
+
+            <div class="contato-mapa-texto">
+
+                <small>
+                    LOCALIZAÇÃO
+                </small>
+
+                <h2>
+                    Venha nos visitar 📍
+                </h2>
+
+                <p>
+                    Estamos esperando por você!
+                </p>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Rua+Professora+Lucinda+Bastos+950+Jundiapeba+Mogi+das+Cruzes+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="botao-mapa"
+                >
+                    📍 COMO CHEGAR
+                </a>
+
+            </div>
+
+
+            <!-- MAPA -->
+
+            <div class="mapa-contato">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Rua+Professora+Lucinda+Bastos+950,+Jundiapeba,+Mogi+das+Cruzes,+SP&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================
+     WHATSAPP FLUTUANTE
+====================================== -->
+
+<a
+    href="https://wa.me/5511953000827"
+    class="whatsapp-flutuante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Fazer pedido pelo WhatsApp"
+>
+
+    <span>
+        💬
+    </span>
+
+    <strong>
+        Faça seu pedido
+    </strong>
+
+</a>
+
+
+<!-- =====================================
+     RODAPÉ
+====================================== -->
+
+<footer class="rodape">
+
+    <div class="rodape-colunas">
+
+
+        <!-- COLUNA 1 - LOGO -->
+
+        <div class="rodape-coluna rodape-logo">
+
+            <img
+                src="imagens/logo.jpeg"
+                alt="Total Carnes"
+            >
+
+            <p>
+                Qualidade e sabor para o seu churrasco.
+            </p>
+
+        </div>
+
+
+        <!-- COLUNA 2 - LOCALIZAÇÃO -->
+
+        <div class="rodape-coluna">
+
+            <h3>
+                📍 Encontre a gente
+            </h3>
+
+            <p>
+                Rua Professora Lucinda Bastos, 950
+            </p>
+
+            <p>
+                Jundiapeba — Mogi das Cruzes/SP
+            </p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Professora+Lucinda+Bastos+950+Jundiapeba+Mogi+das+Cruzes+SP"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                📍 Ver localização
+            </a>
+
+        </div>
+
+
+        <!-- COLUNA 3 - ATENDIMENTO -->
+
+        <div class="rodape-coluna">
+
+            <h3>
+                📞 Atendimento
+            </h3>
+
+            <p>
+                🕐 Segunda a sábado
+            </p>
+
+            <p>
+                08h às 19h
+            </p>
+
+            <p>
+                🕐 Domingos e feriados
+            </p>
+
+            <p>
+                08h às 13h
+            </p>
+
+            <a
+                href="https://wa.me/5511953000827"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rodape-whatsapp"
+            >
+                💬 Falar pelo WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         LINHA FINAL
+    ====================================== -->
+
+    <div class="rodape-final">
+
+        <p>
+            © 2026 Total Carnes — Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

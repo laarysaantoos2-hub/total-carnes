@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Total Carnes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="imagens/logo site.jpeg" alt="Total Carnes">
+
+            <div class="logo-texto">
+                <span>Total Carnes</span>
+                <small>A qualidade que você confia</small>
+            </div>
+
+        </div>
+
+
+        <button
+            class="menu-mobile"
+            id="menuMobile"
+            aria-label="Abrir menu"
+        >
+            ☰
+        </button>
+
+
+        <nav id="menuNav">
+
+            <a href="index.html">🏠 INÍCIO</a>
+
+            <a href="catalogo.html">🥩 CATÁLOGO</a>
+
+            <a href="sobre.html">❤️ SOBRE NÓS</a>
+
+            <a href="contato.html">📍 CONTATO</a>
+
+        </nav>
+
+
+        <button
+            class="pedido"
+            onclick="abrirCarrinho()"
+        >
+            🛒 PEDIDO
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="categoria">
+                🥩 CATÁLOGO ONLINE
+            </div>
+
+            <h1>
+                O melhor sabor começa
+                <span>aqui.</span>
+            </h1>
+
+            <p>
+                Escolha suas carnes, monte seu pedido e
+                envie diretamente pelo WhatsApp.
+            </p>
+
+            <button
+                class="botao"
+                onclick="document.getElementById('catalogo').scrollIntoView()"
+            >
+                FAZER PEDIDO →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DIFERENCIAIS
+    ========================== -->
+
+    <section class="diferenciais">
+
+        <div class="diferenciais-titulo">
+
+            <small>
+                POR QUE ESCOLHER A TOTAL CARNES?
+            </small>
+
+            <h2>
+                Qualidade em cada detalhe.
+            </h2>
+
+            <p>
+                Tudo para deixar seu churrasco mais saboroso,
+                prático e especial.
+            </p>
+
+        </div>
+
+
+        <div class="diferenciais-grid">
+
+            <div class="diferencial">
+
+                <div class="diferencial-icone">
+                    🥩
+                </div>
+
+                <h3>
+                    Carnes selecionadas
+                </h3>
+
+                <p>
+                    Trabalhamos com produtos escolhidos
+                    com cuidado para garantir qualidade.
+                </p>
+
+            </div>
+
+
+            <div class="diferencial">
+
+                <div class="diferencial-icone">
+                    🔪
+                </div>
+
+                <h3>
+                    Cortes preparados
+                </h3>
+
+                <p>
+                    Cortes preparados com atenção
+                    para você aproveitar ainda mais.
+                </p>
+
+            </div>
+
+
+            <div class="diferencial">
+
+                <div class="diferencial-icone">
+                    ❤️
+                </div>
+
+                <h3>
+                    Atendimento especial
+                </h3>
+
+                <p>
+                    Atendimento próximo e feito
+                    pensando em cada cliente.
+                </p>
+
+            </div>
+
+
+            <div class="diferencial">
+
+                <div class="diferencial-icone">
+                    🛵
+                </div>
+
+                <h3>
+                    Praticidade
+                </h3>
+
+                <p>
+                    Faça seu pedido online e escolha
+                    entre retirar na loja ou receber por Uber.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CATÁLOGO
+    ========================== -->
+
+    <section class="catalogo" id="catalogo">
+
+        <div class="titulo">
+
+            <small>
+                CATÁLOGO ONLINE
+            </small>
+
+            <h2>
+                Escolha seus produtos
+            </h2>
+
+        </div>
+
+
+        <!-- CARNES -->
+
+        <div class="categoria-produtos">
+
+            <small>
+                CARNES
+            </small>
+
+            <h2>
+                🥩 Nossas carnes
+            </h2>
+
+        </div>
+
+
+        <div class="produtos">
+
+
+            <!-- FRALDINHA -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/Fraldinha Recheada.jpeg"
+                        alt="Fraldinha Recheada"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Fraldinha Recheada
+                    </h3>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarAoCarrinho('Fraldinha Recheada', 0, 'Kg')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTRA FILÉ -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/contra file.jpeg"
+                        alt="Contra Filé"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Contra Filé
+                    </h3>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarAoCarrinho('Contra Filé', 0, 'kg')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHULETA COSTELA GAÚCHA -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/chuleta.jpg"
+                        alt="Chuleta Costela Gaúcha"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Chuleta Costela Gaúcha
+                    </h3>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarAoCarrinho('Chuleta Costela Gaúcha', 0, 'kg')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CORAÇÃO -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/coracao.jpeg"
+                        alt="Coração Temperado"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Coração Temperado
+                    </h3>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarAoCarrinho('Coração Temperado', 0, 'un')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             ACOMPANHAMENTOS
+        ========================== -->
+
+        <div class="categoria-produtos">
+
+            <small>
+                ACOMPANHAMENTOS
+            </small>
+
+            <h2>
+                🥖 Para acompanhar seu churrasco
+            </h2>
+
+        </div>
+
+
+        <div class="produtos">
+
+
+            <!-- PÃO DE ALHO -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/paodealho.jpeg"
+                        alt="Pão de Alho"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Pão de Alho
+                    </h3>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarAoCarrinho('Pão de Alho', 0, 'un')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUEIJO COALHO -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/queijo.jpeg"
+                        alt="Queijo Coalho"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Queijo Coalho
+                    </h3>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarAoCarrinho('Queijo Coalho', 0, 'un')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAL GROSSO -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/salgrosso.jpeg"
+                        alt="Sal Grosso"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Sal Grosso
+                    </h3>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarAoCarrinho('Sal Grosso', 0, 'un')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAL DE PARRILLA -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/saldeParrilla.jpg"
+                        alt="Sal de Parrilla"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Sal de Parrilla
+                    </h3>
+
+                    <label class="label-sabor">
+                        Escolha o sabor:
+                    </label>
+
+                    <select
+                        class="select-sabor"
+                        id="sabor-sal"
+                    >
+                        <option value="Tradicional">
+                            Tradicional
+                        </option>
+
+                        <option value="Ervas Finas">
+                            Ervas Finas
+                        </option>
+
+                        <option value="Chimichurri">
+                            Chimichurri
+                        </option>
+
+                        <option value="Com Alho">
+                            Com Alho
+                        </option>
+
+                        <option value="Defumado com Pimenta">
+                            Defumado com Pimenta
+                        </option>
+
+                        <option value="Pimenta-do-Reino">
+                            Pimenta-do-Reino
+                        </option>
+                    </select>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarComSabor('Sal de Parrilla', 0, 'un', 'sabor-sal')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAROFA -->
+
+            <div class="produto">
+
+                <div class="imagem">
+
+                    <img
+                        src="imagens/farofa.jpeg"
+                        alt="Farofa"
+                    >
+
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>
+                        Farofa
+                    </h3>
+
+                    <label class="label-sabor">
+                        Escolha o sabor:
+                    </label>
+
+                    <select
+                        class="select-sabor"
+                        id="sabor-farofa"
+                    >
+                        <option value="Pequi">
+                            Pequi
+                        </option>
+
+                        <option value="Carne Seca">
+                            Carne Seca
+                        </option>
+
+                        <option value="Bacon">
+                            Bacon
+                        </option>
+
+                        <option value="Costelinha com Limão">
+                            Costelinha com Limão
+                        </option>
+
+                        <option value="Torresmo">
+                            Torresmo
+                        </option>
+
+                        <option value="Picanha">
+                            Picanha
+                        </option>
+
+                        <option value="Costela">
+                            Costela
+                        </option>
+
+                        <option value="Churrasco">
+                            Churrasco
+                        </option>
+                    </select>
+
+                    <button
+                        class="adicionar"
+                        onclick="adicionarComSabor('Farofa', 0, 'un', 'sabor-farofa')"
+                    >
+                        ADICIONAR À ENCOMENDA
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOBRE NÓS
+    ========================== -->
+
+    <section class="sobre" id="sobre">
+
+        <div class="sobre-cabecalho">
+
+            <small>
+                SOBRE O TOTAL CARNES
+            </small>
+
+            <h2>
+                Qualidade que você
+                <span>confia.</span>
+            </h2>
+
+            <p>
+                No Total Carnes, cada detalhe é pensado para
+                deixar o seu churrasco ainda melhor.
+            </p>
+
+        </div>
+
+
+        <div class="sobre-principal">
+
+
+            <!-- FOTO -->
+
+            <div class="sobre-foto">
+
+                <img
+                    src="imagens/acougue.jpg"
+                    alt="Total Carnes - nossa loja"
+                >
+
+            </div>
+
+
+            <!-- TEXTO -->
+
+            <div class="sobre-texto">
+
+                <h3>
+                    Sabor, qualidade e confiança.
+                </h3>
+
+                <p>
+                    Trabalhamos com carnes selecionadas e produtos
+                    escolhidos com cuidado para levar mais qualidade
+                    para a sua mesa.
+                </p>
+
+                <p>
+                    Seja para o churrasco do fim de semana,
+                    aquele almoço especial ou para o dia a dia,
+                    estamos sempre prontos para oferecer produtos
+                    de qualidade e um atendimento especial.
+                </p>
+
+
+                <div class="sobre-destaques">
+
+                    <div>
+
+                        <strong>🥩</strong>
+
+                        <span>
+                            Carnes selecionadas
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>🔥</strong>
+
+                        <span>
+                            Qualidade e sabor
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>❤️</strong>
+
+                        <span>
+                            Feito para você
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             AVALIAÇÕES
+        ========================== -->
+
+        <div class="sobre-avaliacoes">
+
+            <div class="avaliacoes-titulo">
+
+                <small>
+                    AVALIAÇÕES DOS CLIENTES
+                </small>
+
+                <h3>
+                    O que nossos clientes dizem
+                </h3>
+
+            </div>
+
+
+            <div class="avaliacoes-grid">
+
+
+                <div class="avaliacao">
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “O pessoal é sempre bem atencioso
+                        e o corte das carnes são ótimos.”
+                    </p>
+
+                    <strong>
+                        Rod Rodrigues
+                    </strong>
+
+                </div>
+
+
+                <div class="avaliacao">
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Melhor açougue da região.”
+                    </p>
+
+                    <strong>
+                        Celso Araújo
+                    </strong>
+
+                </div>
+
+
+                <div class="avaliacao">
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Limpeza excelente e ótimo atendimento.”
+                    </p>
+
+                    <strong>
+                        Ivo Ax Serviços
+                    </strong>
+
+                </div>
+
+
+                <div class="avaliacao">
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Qualidade, açougue bem apresentável
+                        e carnes de primeira.”
+                    </p>
+
+                    <strong>
+                        Andréa Mimi Amore
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NOSSA LOJA
+    ========================== -->
+
+    <section id="nossas-lojas">
+
+        <div class="titulo-loja">
+
+            <small>
+                ENCONTRE A GENTE
+            </small>
+
+            <h2>
+                📍 Nossa Loja
+            </h2>
+
+            <p>
+                Venha nos visitar!
+            </p>
+
+        </div>
+
+
+        <div class="loja-destaque">
+
+
+            <!-- INFORMAÇÕES -->
+
+            <div class="loja-informacoes">
+
+                <div class="icone-localizacao">
+                    📍
+                </div>
+
+                <h3>
+                    Total Carnes
+                </h3>
+
+                <p class="endereco">
+                    Rua Professora Lucinda Bastos, 950<br>
+                    Jundiapeba — Mogi das Cruzes/SP
+                </p>
+
+
+                <div class="horario-loja">
+
+                    <strong>
+                        🕐 Horário de funcionamento
+                    </strong>
+
+                    <p>
+                        Segunda a sábado: 08h às 19h
+                    </p>
+
+                    <p>
+                        Domingos e feriados: 08h às 13h
+                    </p>
+
+                </div>
+
+
+                <a
+                    class="botao-mapa"
+                    href="https://www.google.com/maps/search/?api=1&query=Rua+Professora+Lucinda+Bastos+950+Jundiapeba+Mogi+das+Cruzes+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    📍 Ver localização no mapa
+                </a>
+
+            </div>
+
+
+            <!-- MAPA -->
+
+            <div class="mapa-loja">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Rua+Professora+Lucinda+Bastos+950,+Jundiapeba,+Mogi+das+Cruzes,+SP&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    >
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="rodape">
+
+        <div class="rodape-colunas">
+
+
+            <!-- COLUNA 1 - LOGO -->
+
+            <div class="rodape-coluna rodape-logo">
+
+                <img
+                    src="imagens/logo.jpeg"
+                    alt="Total Carnes"
+                >
+
+                <p>
+                    Qualidade e sabor para o seu churrasco.
+                </p>
+
+            </div>
+
+
+            <!-- COLUNA 2 - CONTATO -->
+
+            <div class="rodape-coluna">
+
+                <h3>
+                    📍 Encontre a gente
+                </h3>
+
+                <p>
+                    Rua Professora Lucinda Bastos, 950
+                </p>
+
+                <p>
+                    Jundiapeba — Mogi das Cruzes/SP
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Rua+Professora+Lucinda+Bastos+950+Jundiapeba+Mogi+das+Cruzes+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    📍 Ver localização
+                </a>
+
+            </div>
+
+
+            <!-- COLUNA 3 - ATENDIMENTO -->
+
+            <div class="rodape-coluna">
+
+                <h3>
+                    📞 Atendimento
+                </h3>
+
+                <p>
+                    🕐 Segunda a sábado
+                </p>
+
+                <p>
+                    08h às 19h
+                </p>
+
+                <p>
+                    🕐 Domingos e feriados
+                </p>
+
+                <p>
+                    08h às 13h
+                </p>
+
+                <a
+                    href="https://wa.me/5511953000827"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="rodape-whatsapp"
+                >
+                    💬 Falar pelo WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- LINHA FINAL -->
+
+        <div class="rodape-final">
+
+            <p>
+                © 2026 Total Carnes — Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================
+         CARRINHO
+    ========================== -->
+
+    <div
+        id="carrinho"
+        class="carrinho"
+    >
+
+        <div class="carrinho-topo">
+
+            <strong>
+                🛒 Sua Encomenda
+            </strong>
+
+            <button onclick="fecharCarrinho()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            id="itens-carrinho"
+            class="itens-carrinho"
+        >
+
+            <p>
+                Seu carrinho está vazio.
+            </p>
+
+        </div>
+
+
+        <button
+            class="continuar"
+            onclick="fecharCarrinho()"
+        >
+            CONTINUAR COMPRANDO
+        </button>
+
+
+        <button
+            class="finalizar"
+            onclick="finalizarWhatsApp()"
+        >
+            ENVIAR ENCOMENDA PELO WHATSAPP
+        </button>
+
+
+        <!-- DADOS DO PEDIDO -->
+
+        <div
+            id="dados-pedido"
+            class="dados-pedido"
+        >
+
+            <div class="checkout-titulo">
+
+                👤 <strong>
+                    Seus dados
+                </strong>
+
+            </div>
+
+
+            <input
+                type="text"
+                id="nome-cliente"
+                placeholder="Seu nome"
+            >
+
+
+            <input
+                type="tel"
+                id="telefone-cliente"
+                placeholder="Seu telefone"
+            >
+
+
+            <div class="checkout-titulo">
+
+                📦 <strong>
+                    Como deseja receber?
+                </strong>
+
+            </div>
+
+
+            <div class="opcoes-entrega">
+
+
+                <!-- ENTREGA POR UBER -->
+
+                <button
+                    type="button"
+                    class="opcao-entrega"
+                    id="btn-uber"
+                    onclick="selecionarEntrega('Entrega por Uber')"
+                >
+
+                    <span class="opcao-icone">
+                        🛵
+                    </span>
+
+                    <span>
+
+                        <strong>
+                            Entrega por Uber
+                        </strong>
+
+                        <small>
+                            Taxa por conta do cliente
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <!-- RETIRADA NA LOJA -->
+
+                <button
+                    type="button"
+                    class="opcao-entrega"
+                    id="btn-retirada"
+                    onclick="selecionarEntrega('Retirada na loja')"
+                >
+
+                    <span class="opcao-icone">
+                        🏪
+                    </span>
+
+                    <span>
+
+                        <strong>
+                            Retirada na loja
+                        </strong>
+
+                        <small>
+                            Sem taxa de entrega
+                        </small>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <select
+                id="tipo-entrega"
+                style="display:none;"
+            >
+
+                <option value="">
+                    Escolha
+                </option>
+
+                <option value="Entrega por Uber">
+                    Entrega por Uber
+                </option>
+
+                <option value="Retirada na loja">
+                    Retirada na loja
+                </option>
+
+            </select>
+
+
+            <!-- ENDEREÇO PARA ENTREGA -->
+
+            <div
+                id="campo-endereco"
+                class="campo-endereco"
+            >
+
+                <div class="checkout-titulo endereco-titulo">
+
+                    📍 <strong>
+                        Endereço para entrega
+                    </strong>
+
+                </div>
+
+
+                <input
+                    type="text"
+                    id="endereco-cliente"
+                    placeholder="Digite seu endereço completo"
+                >
+
+
+                <small>
+                    🛵 A taxa do Uber é por conta do cliente.
+                </small>
+
+            </div>
+
+
+            <!-- FORMA DE PAGAMENTO -->
+
+            <div class="checkout-titulo">
+
+                💳 <strong>
+                    Forma de pagamento
+                </strong>
+
+            </div>
+
+
+            <div class="pix-opcao">
+
+                <span class="pix-icone">
+                    💠
+                </span>
+
+                <span>
+
+                    <strong>
+                        PIX
+                    </strong>
+
+                    <small>
+                        Pagamento via Pix
+                    </small>
+
+                </span>
+
+                <span class="pix-selecionado">
+                    ●
+                </span>
+
+            </div>
+
+
+            <select
+                id="pagamento"
+                style="display:none;"
+            >
+
+                <option value="Pix">
+                    Pix
+                </option>
+
+            </select>
+
+
+            <!-- OBSERVAÇÕES -->
+
+            <div class="checkout-titulo observacao-titulo">
+
+                📝 <strong>
+                    Observações
+                </strong>
+
+                <span>
+                    (opcional)
+                </span>
+
+            </div>
+
+
+            <textarea
+                id="observacoes"
+                maxlength="150"
+                placeholder="Alguma observação sobre o pedido?"
+            ></textarea>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         WHATSAPP FLUTUANTE
+    ========================== -->
+
+    <a
+        href="https://wa.me/5511953000827"
+        class="whatsapp-flutuante"
+        target="_blank"
+        aria-label="Fazer pedido pelo WhatsApp"
+    >
+
+        <span>
+            💬
+        </span>
+
+        <strong>
+            Faça seu pedido
+        </strong>
+
+    </a>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
